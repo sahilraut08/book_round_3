@@ -1,0 +1,29 @@
+<%- include('../layouts/header') %>
+
+<section class="mt-4 add">
+    <div class="dashb-headers">
+        <div class="row">
+            <div class="col-sm-4 mt-3 col-12">
+                <center>
+                    <img class="img-fluid book-img" src="<%= book.coverImagePath %>">
+                </center>
+            </div>
+            <div class="col-sm-7 col-12">
+                <p class="h2 m-3 book-title"><%= book.title %></p>
+                <p class="text-secondary book-head m-3"><%= book.name %></p>
+                <p class="small m-3 text-muted"><%= book.createdAt.toLocaleDateString() %></p>
+                <p class="m-3 book-head">Genre: <%= book.genre %></p>
+                <p class="m-3">
+                    <span class="book-head">Description: </span><br> 
+                    <span class="book-description"><%= book.description %></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="mt-5">
+        <h1 class="m-3">Content</h1>
+        <p class="read-content"><%= book.content %></p>
+    </div>
+</section>
+
+<%- include('../layouts/footer') %> 

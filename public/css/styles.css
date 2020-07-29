@@ -1,0 +1,489 @@
+body {
+    font-size: 1rem;    
+    background-color: rgba(200, 210, 210, 0.6);
+    font-family: 'Acme', sans-serif;
+}
+
+p {
+    margin-top: 0!important;
+    margin-bottom: 0rem!important;
+    line-height: 25px;
+}
+
+.row {
+    margin-right: 0!important;
+    margin-left: 0!important;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+button, input {
+    overflow: hidden;
+}
+
+.header {
+    font-size: 5vw;
+    margin: 0rem;
+    font-family: 'Acme', sans-serif;
+}
+
+.read-content {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.hr-header{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    width: 75%;
+    border: 2px solid rgba(0,0,0,0.7);
+}
+
+.hr-underline {
+    width: 50%;
+    border: 3px solid green;
+}
+
+.nav-body {
+    background-color: #0d1249;
+    color: #e8e8ea;
+}
+
+.header-btn {
+    font-size: 16px;
+}
+
+.header-btn:hover {
+    background-color: blue;
+    border-radius: 2rem;
+    color: white
+}
+
+.header-body {
+    font-size: 1rem;
+    text-align: center;
+    padding: 5rem 0;
+    background: linear-gradient(90deg, rgba(0,11,11,1) 0%, rgba(13,18,73,1) 42%, rgba(253,45,45,1) 100%);
+    background-size: 200% 200%;
+    margin-bottom: 2rem;
+    animation: gradient 15s ease infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.start-reading {
+    margin: 2rem 1rem;
+    padding: 16px 40px;
+    background-color: black;
+    border-radius: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.start-reading:hover {
+    background-color: rgba(255,11,11,1);
+    color: white;
+    transition: 0.2s;
+}
+
+.social-ico .fa {
+    position: relative!important;
+}
+
+.login-form {
+    /* padding: 3rem; */
+    margin: 2rem 0 2rem 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0rem 0rem 1rem black;
+}
+
+.login-right {
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    padding: 3rem;
+    font-family: 'Acme', sans-serif;
+}
+
+button.login-btn {
+    background-color: green;
+    border-radius: 3rem;
+    padding: 10px 1rem;
+    width: 60%;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: white!important;
+}
+.login-left {
+    background-color: white;
+}
+
+.user-head {
+    position: relative;
+    margin-right: 50%;
+}
+
+.email-head {
+    position: relative;
+    margin-right: 50%;
+}
+.password-head {
+    position: relative;
+    margin-right: 45%;
+}
+
+.login {
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    color: white;
+}
+
+.hr-login {
+    width: 80%;
+    border: 1px solid green;
+}
+
+.email {
+    margin-top: 1rem;
+    color: white;
+}
+
+.password {
+    margin-top: 1rem;
+    color: white;
+}
+
+.user {
+    margin-top: 1rem;
+    color: white;
+}
+
+.textbox {
+    position: relative;
+    background: none;
+    border: 2px solid white;
+    width: 80%;
+    padding-left: 2rem;
+    color: white;
+    border-radius: 1rem;
+}
+
+::placeholder {
+    color: rgba(200, 210, 210, 0.6);
+    font-size: small;
+}
+
+.textbox:focus {
+    outline: none;
+    border: 2px solid red;
+}
+
+.fa {
+    position: absolute;
+    margin-left: 16px;
+    padding: 7px 0;
+}
+
+a.redirect-btn{
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 10px 2rem;
+    font-weight: bold;
+    font-size: 16px;
+    background: rgb(2,0,36);
+    color: #e8e8ea;
+}
+
+a.redirect-btn:hover {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,8,128,1) 50%, rgba(0,212,255,1) 100%);
+    color: white;
+    transition: 0.5s ease-in-out;
+    border: none;
+}
+
+button.nav-drop {
+    background: none;
+}
+
+.dropdown-item:hover {
+    background-color: #0d1249;
+}
+
+.add {
+    padding: 2rem;
+    padding-top: 0;
+    position: relative;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.carousel-upload {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.img-carousel {
+    border-radius: 10px;
+}
+
+textarea.description {
+    font-size: 15px;
+    width: 100%;
+    height: 200px;
+    background: none;
+    border-radius: 1rem;
+    padding: 14px;
+    border: 2px solid green;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+input.title, input.genre {
+    font-size: 15px;
+    width: 90%;
+    border: none;
+    background: none;
+    border-bottom: 2px solid green;
+}
+
+input.pageCount, input.price {
+    width: 50%;
+    border: none;
+    background: none;
+    border-bottom: 2px solid green;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input.title::placeholder, 
+input.genre::placeholder,
+input.pageCount::placeholder, 
+input.price::placeholder,
+textarea.description::placeholder,
+textarea.content::placeholder {
+    color: rgba(0,0,0,0.4);
+    font-size: 12px;
+}
+
+textarea.content {
+    width: 100%;
+    height: 90%;
+    background: #e8e8ea;
+    border: 2px solid green;
+    border-radius: 1rem;
+    padding: 14px;
+    font-size: 15px;
+}
+
+button.add-btn {
+    border: 1px solid rgb(34,193,100);
+    border-radius: 2rem;
+    padding: 10px 2rem;
+    font-weight: bold;
+    font-size: 16px;
+    color: #e8e8ea;
+    background: rgb(34,193,100);
+}
+
+button.add-btn:hover {
+    background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(40,198,44,0.9537496272923232) 42%, rgba(152,253,45,0.6764387029225754) 100%);
+    color: white;
+    transition: 0.5s ease-in-out;
+    border: none;
+}
+
+.img-upload {
+    width: 80%;
+}
+
+.book {
+    /* box-shadow: 0px 0px 4px gray; */
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 16px;
+    /* background-color: rgba(200, 210, 210, 0.6); */
+}
+
+.book-title {
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.book-header {
+    font-family: 'Courgette', cursive;
+    color: rgb(255,0,25);
+}
+
+.book-head {
+    font-family: 'Concert One', cursive;
+    font-size: 1rem;
+}
+
+.book-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+img.book-img {
+    border-radius: 10px;
+    height: 300px;
+    width: auto;
+    box-shadow: 0 0 1rem black;
+}
+
+.read-content {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 23px;
+    line-height: 30px;
+    word-spacing: 15px;
+}
+
+.btn.book-img-btn {
+    padding: 0rem;
+}
+
+.book-details {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.book-getimg {
+    border-radius: 10px;
+    height: 500px;
+    width: auto;
+    box-shadow: 0 0 10px black;
+}
+
+.main-home {
+    position: relative;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+input.search-box {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 5px;
+    margin: 1rem;
+}
+
+.book-dash {
+    margin-left: 10px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .dashb-link {
+        left: 0;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .main {
+        position: relative;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .main-home {
+        margin: 10px 1rem;
+    }
+
+    textarea.description, textarea.content {
+        width: 100%;
+        height: 200px;
+    }
+
+    .add {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .basic-details {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        font-size: 10vw;
+    }
+    .read-content {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .book-name {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .book-dash {
+        margin-left: 3rem;
+        /* margin-right: 1rem; */
+    }
+    .main-home {
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .carousel-upload {
+        width: 100%;
+    }
+    img.img-carousel {
+        border-radius: 0;
+    }
+}
+
+footer {
+    margin-top: 3rem;
+    /* position: fixed; */
+    bottom: 0;
+    background-color: white;
+    /* z-index: -1; */
+    width: 100%;
+    border-top: 1px solid gray;
+    background-color: #e8e8ea; 
+    padding: 1rem;
+}
+
+
+/* font family
+font-family: 'Acme', sans-serif;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Concert One', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu Mono', monospace;
+*/

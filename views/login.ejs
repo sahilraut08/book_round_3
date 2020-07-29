@@ -1,0 +1,36 @@
+<%- include('./layouts/publicHeader') %> 
+<section id="login">
+    <div class="login-form text-center">
+        <div class="row">
+            <div class="col-md-6 login-left">
+                <img class="img-fluid login-img d-md-block d-none" src="images/read2.jpg" alt="reading-image">
+                <div class="d-md-block">
+                    <div class="mt-2 ml-3 text-secondary font-weight-bold" style="font-family: 'Indie Flower', cursive;">Welcome!Please login to explore the world of BOOKS.</div>
+                    <p class="h6 mt-2">OR</p>
+                    <div class="p-2 ml-3 mb-2">
+                        <p class="small text-muted d-lg-inline">Don't have a account.</p>
+                        <a href="/signup" class="btn m-2 d-lg-inline redirect-btn">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 login-right">
+                <h2 class="login">Log IN</h2>
+                <hr>
+                <form action="/login" method="POST">
+                    <div class="email">
+                        <label class="email-head" for="email">Email</label><br>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <input type="email" id="email" class="textbox" name="email" placeholder="enter your email" required>
+                    </div>
+                    <div class="password">
+                        <label class="password-head" for="password">Password</label><br> 
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" id="password" class="textbox" name="password" placeholder="enter your email" required>
+                    </div>
+                    <button type="submit" href="/books/dashboard" class="btn login-btn">Log IN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<%- include('./layouts/footer') %> 

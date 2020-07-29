@@ -1,0 +1,18 @@
+<%- include('../layouts/header') %> 
+
+<section class="mb-5" id="add">  
+    <div class="p-1 pt-4">
+        <h2 class="text-center book-header">Add Book</h2><hr class="hr-underline">
+    </div>
+    <form class="add" action="/books/add" method="POST">
+        
+        <%- include('./partials/_upload-forms') %> 
+
+        <div class="text-center mt-4">
+            <button class="btn add-btn font-weight-bold" type="submit">ADD BOOK</button>
+        </div>
+    </form>  
+</section>    
+    
+<%- include('../layouts/footer') %> 
+        

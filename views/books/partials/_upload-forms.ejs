@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col-md-7 col-12">
+        <div class="d-sm-flex">
+            <div class="w-50">
+                <label class="small font-weight-bold" for="image">Cover Image</label><br>
+                <input type="file" name="cover" class="filepond img-upload">
+            </div>
+            <div class="basic-details">
+                <div class="mb-3">
+                    <label class="small mb-0 font-weight-bold" for="title">Author name</label><br>
+                    <input type="text" id="title" class="title" name="name" placeholder="enter name..." required value="<%= book.name %>">
+                </div>
+                <div class="mb-3">
+                    <label class="small mb-0 font-weight-bold" for="title">Title</label><br>
+                    <input type="text" id="title" class="title" name="title" placeholder="enter title..." required value="<%= book.title %>">
+                </div>
+                <div class="mb-3">
+                <label class="small mb-0 font-weight-bold" for="gerne">Genre</label><br>
+                    <input type="text" id="genre" class="genre" name="genre"  placeholder="enter genre..." required value="<%= book.genre %>">
+                </div>
+                <div class="mb-3">
+                    <label class="small mb-0 font-weight-bold" for="bookType">Book Type</label><br>
+                    <select type="text" id="bookType" class="bookType" name="bookType" required value="<%= book.bookType %>">
+                      <option value="free">Free</option>
+                      <option value="paid">Paid</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="small mb-0 font-weight-bold" for="price">Price</label><br>
+                    <span class="small">Rs.</span>
+                    <input type="number" id="price" class="price" name="price" required placeholder="ex. 0, 50" value="<%= book.price %> ">
+                </div>
+            </div>
+        </div>
+        <div class="p-3">
+            <label class="small font-weight-bold" for="description">Description</label><br>
+            <textarea id="description" class="description" placeholder="describe here...." name="description" required value="<%= book.description %>" maxlength="50"></textarea><br>                                       
+        </div>
+    </div>
+    <div class="col-md-5 col-12">
+        <label class="text-danger font-weight-bold" for="content">Write your content below</label><br>
+        <textarea class="content" name="content" placeholder="start writing...." id="content" required><%= book.content %></textarea>
+    </div>
+</div>

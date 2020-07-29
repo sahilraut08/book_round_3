@@ -1,0 +1,29 @@
+<%- include('../layouts/header') %> 
+<div class="p-4">
+    <h2 class="text-center book-header">Free Books</h2><hr class="hr-underline">
+</div>
+
+<div class="add mt-4">       
+    <div class="row">
+    <% book.forEach(book => { %>
+        <div class="col-md-3 col-12 mt-3">
+          <div class="book">
+            <center>
+              <a href="/books/getbook/<%= book.id %> ">
+                <img class="img-fluid book-img" src="<%= book.coverImagePath %>">
+              </a>
+            </center>
+          </div>
+          <div class="book-dash mt-1">
+            <p class="h3 book-title"><%= book.title %></p>
+            <p class="small text-muted"><%= book.createdAt.toLocaleDateString() %></p>
+            <p class="h3 text-secondary book-head"><%= book.name %></p>
+            <p><span class="book-head">Genre: </span><%= book.genre %></p>
+          </div>
+        </div>
+        <% }) %> 
+    </div>
+</div>
+
+
+<%- include('../layouts/footer') %>

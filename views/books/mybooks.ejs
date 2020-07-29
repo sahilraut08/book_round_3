@@ -1,0 +1,42 @@
+<%- include('../layouts/header') %> 
+<div class="p-4 dashb-header">
+    <h2 class="text-center book-header">My Books</h2><hr class="hr-underline">
+</div>
+
+<div class="main-home">    
+    <div class="row">
+        <% book.forEach(book => { %>
+            <div class="col-md-6 col-12 mt-3">
+            <div class="book">
+                <div class="row">
+                    <div class="col-sm-5 mt-3">
+                        <center>
+                            <img class="img-fluid book-img" src="<%= book.coverImagePath %>">
+                        </center>
+                    </div>
+                    <div class="col-sm-7 mt-2">
+                        <p class="h3 book-title"><%= book.title %></p>
+                        <p class="h3 book-head text-secondary"><%= book.name %></p>
+                        <p class="small text-muted"><%= book.createdAt.toLocaleDateString() %></p>
+                        <p><span class="book-head">Genre: </span><%= book.genre %></p>
+                        <p><span class="book-head">Price: </span>Rs.<%= book.price %> </p>
+                        <p>
+                            <span class="book-head">Description: </span><br>
+                            <span class="book-description"><%= book.description %></span>
+                        </p>
+                    </div>
+                </div>
+                <center>
+                    <a href="/books/edit/<%= book.id %>" class="btn btn-primary m-1 ">Edit</a>
+                    <a class="btn btn-success d-inline m-1" href='/books/read/<%= book.id %> '>Read</a>
+                    <form action="/books/<%= book.id %>?_method=DELETE" method="POST" class="d-inline m-1">
+                        <button class="btn btn-danger" type="submit">DELETE</button>
+                    </form>
+                </center>
+            </div>
+            <!-- <hr> -->
+            </div>
+        <% }) %> 
+    </div>
+</div>
+<%- include('../layouts/footer') %> 
